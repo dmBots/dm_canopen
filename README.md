@@ -2,6 +2,9 @@
 ## 项目简介
 此项目是一个用于CANopen协议的字典工具，包含了CANopen通信协议及相关的测试和控制示例，遵循CiA301和CiA402规范。
 
+## 视频演示链接
+https://www.bilibili.com/video/BV1i4421X7mx/?spm_id_from=333.337.search-card.all.click&vd_source=8482d95fe0873c36af69fd64ae582056
+
 ## 目录结构
 CANopen字典工具/CANopenEditor-build: CANopen字典工具的构建目录
 

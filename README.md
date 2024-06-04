@@ -10,7 +10,7 @@ https://www.bilibili.com/video/BV1i4421X7mx/?spm_id_from=333.337.search-card.all
 ## 目录结构
 CANopen字典工具/CANopenEditor-build: CANopen字典工具的构建目录
 
-固件: 目前只适配了DM4310的V3版本电机固件，使用上位机升级就行
+固件: 目前只适配了DM4310的V3版本电机固件，使用上位机升级就行，升级完固件之后，目前还没法使用上位机的CAN进行控制，只能按命令格式去操作。
 
 字典: 存放CANopen协议的字典文件
 

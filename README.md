@@ -14,6 +14,8 @@ CANopen字典工具/CANopenEditor-build: CANopen字典工具的构建目录
 
 字典: 存放CANopen协议的字典文件
 
+注意事项：波特率只支持修改位 1M 500k 250k 125k
+
 控制例程: 存放控制相关的示例代码
 
 CANopen协议移植及测试.pdf: CANopen协议的移植及测试文档

@@ -170,13 +170,13 @@ float tref = uint_to_float(t_refint,  -TMP.TMAX, TMP.TMAX,16);
 
 |  ID   |   COB ID    | byte0-byte1 | byte2-byte3 |
 | :---: | :---------: | :---------: | :---------: |
-| TPDO1 | 200+node_id |   状态字    |  实际扭矩   |
+| TPDO1 | 280+node_id |   状态字    |  实际扭矩   |
 
 ### 3.2 TPDO2 命令格式
 
 |  ID   |   COB ID    | byte0-byte1 | byte2-byte3 |
 | :---: | :---------: | :---------: | :---------: |
-| TPDO2 | 300+node_id |  实际速度   |  实际位置   |
+| TPDO2 | 380+node_id |  实际速度   |  实际位置   |
 
 ### 3.3 TPDO3 命令格式
 
@@ -184,7 +184,7 @@ float tref = uint_to_float(t_refint,  -TMP.TMAX, TMP.TMAX,16);
 
 |  ID   |   COB ID    | byte0-byte3 |
 | :---: | :---------: | :---------: |
-| TPDO3 | 400+node_id |  Fast TPDO  |
+| TPDO3 | 480+node_id |  Fast TPDO  |
 
 命令格式：
 

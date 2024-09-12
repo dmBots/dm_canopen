@@ -8,8 +8,8 @@ Description=
 CreationTime=11:27AM
 CreationDate=05-14-2024
 CreatedBy=
-ModificationTime=3:47PM
-ModificationDate=07-30-2024
+ModificationTime=6:10PM
+ModificationDate=09-12-2024
 ModifiedBy=
 
 [DeviceInfo]
@@ -125,7 +125,7 @@ DefaultValue=0x00000000
 PDOMapping=0
 
 [OptionalObjects]
-SupportedObjects=68
+SupportedObjects=66
 1=0x1003
 2=0x1005
 3=0x1006
@@ -190,10 +190,8 @@ SupportedObjects=68
 62=0x6085
 63=0x6086
 64=0x6087
-65=0x60C5
-66=0x60C6
-67=0x60F4
-68=0x60FF
+65=0x60F4
+66=0x60FF
 
 [1003]
 ParameterName=Pre-defined error field
@@ -876,7 +874,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x60600008
+DefaultValue=0x60600010
 PDOMapping=0
 
 [1600sub3]
@@ -885,7 +883,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x60710010
+DefaultValue=0x60710020
 PDOMapping=0
 
 [1600sub4]
@@ -1464,7 +1462,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x60610008
+DefaultValue=0x60610010
 PDOMapping=0
 
 [1A00sub3]
@@ -1473,7 +1471,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x60770010
+DefaultValue=0x60770020
 PDOMapping=0
 
 [1A00sub4]
@@ -1788,8 +1786,6 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0006
 AccessType=ro
-HighLimit=65535
-LowLimit=0
 DefaultValue=0
 PDOMapping=1
 
@@ -1819,7 +1815,7 @@ PDOMapping=1
 ParameterName=Quick stop option code
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0003
+DataType=0x0007
 AccessType=rw
 HighLimit=7
 LowLimit=0
@@ -1830,10 +1826,8 @@ PDOMapping=0
 ParameterName=Modes of operation
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0002
+DataType=0x0006
 AccessType=rww
-HighLimit=7
-LowLimit=0
 DefaultValue=0
 PDOMapping=1
 
@@ -1841,10 +1835,8 @@ PDOMapping=1
 ParameterName=Modes of operation display
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0002
+DataType=0x0006
 AccessType=ro
-HighLimit=7
-LowLimit=0
 DefaultValue=0
 PDOMapping=1
 
@@ -1892,11 +1884,9 @@ PDOMapping=1
 ParameterName=Position window time
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0006
+DataType=0x0007
 AccessType=rww
-HighLimit=65535
-LowLimit=0
-DefaultValue=0x3E4C
+DefaultValue=0x3E4CCCCD
 PDOMapping=1
 
 [606B]
@@ -1925,65 +1915,53 @@ PDOMapping=1
 ParameterName=Velocity window
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0006
+DataType=0x0007
 AccessType=rww
-HighLimit=65535
-LowLimit=0
-DefaultValue=0x3F00
+DefaultValue=0x3F000000
 PDOMapping=1
 
 [606E]
 ParameterName=Velocity window time
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0006
+DataType=0x0007
 AccessType=rww
-HighLimit=65535
-LowLimit=0
-DefaultValue=0x3DCC
+DefaultValue=0x3DCCCCCD
 PDOMapping=1
 
 [606F]
 ParameterName=Velocity threshold
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0006
+DataType=0x0007
 AccessType=rww
-HighLimit=65535
-LowLimit=0
-DefaultValue=0x3C23
+DefaultValue=0x3F000000
 PDOMapping=1
 
 [6071]
 ParameterName=Target Torque
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0003
+DataType=0x0004
 AccessType=rww
-HighLimit=3000
-LowLimit=-3000
-DefaultValue=0x0000
+DefaultValue=0x0
 PDOMapping=1
 
 [6072]
 ParameterName=Max Torque
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0006
+DataType=0x0007
 AccessType=rww
-HighLimit=3000
-LowLimit=0
-DefaultValue=0x410B
+DefaultValue=0x40E00000
 PDOMapping=1
 
 [6077]
 ParameterName=Torque Actual Value
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0003
+DataType=0x0004
 AccessType=ro
-HighLimit=5000
-LowLimit=-5000
 DefaultValue=0
 PDOMapping=1
 
@@ -1991,7 +1969,7 @@ PDOMapping=1
 ParameterName=Current actual value
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0007
+DataType=0x0004
 AccessType=rw
 DefaultValue=0
 PDOMapping=0
@@ -2011,10 +1989,8 @@ PDOMapping=1
 ParameterName=Polarity
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rww
-HighLimit=255
-LowLimit=0
 DefaultValue=1
 PDOMapping=1
 
@@ -2064,10 +2040,8 @@ PDOMapping=1
 ParameterName=Motion profile type
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0003
+DataType=0x0007
 AccessType=rw
-HighLimit=32767
-LowLimit=-32768
 DefaultValue=0
 PDOMapping=1
 
@@ -2080,28 +2054,6 @@ AccessType=rww
 HighLimit=4294967295
 LowLimit=0
 DefaultValue=0x3F800000
-PDOMapping=1
-
-[60C5]
-ParameterName=Max acceleration
-ObjectType=0x7
-;StorageLocation=RAM
-DataType=0x0007
-AccessType=rww
-HighLimit=4294967295
-LowLimit=0
-DefaultValue=0x461C4000
-PDOMapping=1
-
-[60C6]
-ParameterName=Max deceleration
-ObjectType=0x7
-;StorageLocation=RAM
-DataType=0x0007
-AccessType=rww
-HighLimit=4294967295
-LowLimit=0
-DefaultValue=0x461C4000
 PDOMapping=1
 
 [60F4]
@@ -2208,16 +2160,16 @@ PDOMapping=0
 ParameterName=Software ver
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0006
+DataType=0x0007
 AccessType=ro
-DefaultValue=3173
+DefaultValue=5051
 PDOMapping=0
 
 [2001sub2]
 ParameterName=Hardware ver
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
 DefaultValue=3
 PDOMapping=0
@@ -2226,7 +2178,7 @@ PDOMapping=0
 ParameterName=Voltage max
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
 DefaultValue=30
 PDOMapping=0
@@ -2235,7 +2187,7 @@ PDOMapping=0
 ParameterName=Current max
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
 DefaultValue=10
 PDOMapping=0
@@ -2259,36 +2211,36 @@ PDOMapping=0
 ParameterName=Rated voltage
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
-DefaultValue=24
+DefaultValue=0x41C00000
 PDOMapping=0
 
 [2002sub2]
 ParameterName=Rated current
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
-DefaultValue=7
+DefaultValue=0x40E00000
 PDOMapping=0
 
 [2002sub3]
 ParameterName=Rated torque
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
-DefaultValue=3
+DefaultValue=0x40400000
 PDOMapping=0
 
 [2002sub4]
 ParameterName=Rated speed
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
-DefaultValue=120
+DefaultValue=0x42F00000
 PDOMapping=0
 
 [2002sub5]
@@ -2351,7 +2303,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0
+DefaultValue=0x38C308FF
 PDOMapping=0
 
 [2002subC]
@@ -2367,7 +2319,7 @@ PDOMapping=0
 ParameterName=Pn
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
 DefaultValue=14
 PDOMapping=0
@@ -2376,7 +2328,7 @@ PDOMapping=0
 ParameterName=Gr
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=ro
 DefaultValue=10
 PDOMapping=0
@@ -2400,7 +2352,7 @@ PDOMapping=0
 ParameterName=CAN Node-ID
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
 DefaultValue=1
 PDOMapping=0
@@ -2409,7 +2361,7 @@ PDOMapping=0
 ParameterName=CAN communication speed
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
 DefaultValue=8
 PDOMapping=0
@@ -2418,7 +2370,7 @@ PDOMapping=0
 ParameterName=CANopen sync error
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
 DefaultValue=0
 PDOMapping=0
@@ -2427,7 +2379,7 @@ PDOMapping=0
 ParameterName=CAN res
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
 DefaultValue=0
 PDOMapping=0
@@ -2453,7 +2405,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x3F4CCCCD
+DefaultValue=0
 PDOMapping=0
 
 [2004sub2]
@@ -2462,7 +2414,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x3A83126F
+DefaultValue=0
 PDOMapping=0
 
 [2004sub3]
@@ -2495,7 +2447,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x3B78D8EB
+DefaultValue=0x3ECCCCCD
 PDOMapping=0
 
 [2005sub2]
@@ -2504,7 +2456,7 @@ ObjectType=0x7
 ;StorageLocation=RAM
 DataType=0x0007
 AccessType=rw
-DefaultValue=0x3D20D97C
+DefaultValue=0x3B03126F
 PDOMapping=0
 
 [2005sub3]
@@ -2601,18 +2553,18 @@ PDOMapping=0
 ParameterName=over voltage
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
-DefaultValue=32
+DefaultValue=0x42000000
 PDOMapping=0
 
 [2009sub2]
 ParameterName=under voltage
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
-DefaultValue=15
+DefaultValue=0x41700000
 PDOMapping=0
 
 [200A]
@@ -2685,7 +2637,7 @@ PDOMapping=0
 ParameterName=Clear fault
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
 DefaultValue=0
 PDOMapping=0
@@ -2694,7 +2646,7 @@ PDOMapping=0
 ParameterName=Save zero
 ObjectType=0x7
 ;StorageLocation=RAM
-DataType=0x0005
+DataType=0x0007
 AccessType=rw
 DefaultValue=0
 PDOMapping=0

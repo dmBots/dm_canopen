@@ -45,7 +45,7 @@ void canopen_init(void)
 	motor[M1].ctrl.word = 0x0F;
 	motor[M1].ctrl.mode = 0x02;
 	motor[M1].ctrl.pos_set = 1000.0f;
-	motor[M1].ctrl.vel_set = 2.0f;
+	motor[M1].ctrl.vel_set = 10.0f;
 	motor[M1].ctrl.tor_set = 0.0f;
 }
 

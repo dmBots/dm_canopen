@@ -352,8 +352,6 @@ bit0-bit3均为1时，电机将会启动运行：上电顺序对控制字写入�
 >
 > 相反的，只需要将32位数据/65535，就能得到16位的数据。
 
-<div style="page-break-after:always;"></div>
-
 ## 3. 运动曲线
 
 ### 3.1 加减速 T 形和 S形曲线
@@ -369,8 +367,6 @@ bit0-bit3均为1时，电机将会启动运行：上电顺序对控制字写入�
 | 0    | T形  |
 | 1    | S形  |
 
-<div style="page-break-after:always;"></div>
-
 ### 3.2 位置规划曲线
 
 #### 3.2.1 T形速度S形位置
@@ -380,8 +376,6 @@ bit0-bit3均为1时，电机将会启动运行：上电顺序对控制字写入�
 #### 3.2.2 S形速度S形位置
 
 ![图片2](https://di-1312034326.cos.ap-guangzhou.myqcloud.com/temp_img/%E5%9B%BE%E7%89%872.png)
-
-<div style="page-break-after:always;"></div>
 
 ## 4.对象字典
 
